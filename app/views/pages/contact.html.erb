@@ -1,0 +1,11 @@
+<h1>Let's Keep in touch 💌</h1>
+<h3>Who are you looking for?</h3>
+<form action="/contact" method="get">
+  <input type="text" name="member" placeholder="Tsiky">
+  <input type="submit">
+</form>
+<ol>
+  <% @teachers.each do |teacher| %>
+    <li><%= teacher.capitalize %></li>
+  <% end %>
+</ol>
